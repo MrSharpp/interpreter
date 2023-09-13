@@ -1,8 +1,10 @@
 ﻿using System.IO;
+using Interpreter;
 
 public class Bingo
 {
-    public static void main(string[] args)
+    static bool hadError = false;
+    public static void Main(string[] args)
     {
         if (args.Length > 1)
         {
@@ -17,6 +19,29 @@ public class Bingo
     static void runFile(string path)
     {
         byte[] content = File.ReadAllBytes(path);
-        string stringCont = System.Text.Encoding.UTF8.GetString(content);
+        string source = System.Text.Encoding.UTF8.GetString(content);
+        run(source);
+    }
+
+    static void run(string source)
+    {
+        Scanner scanner = new Scanner(source);
+        List<Token> tokens = scanner.scanTokens();
+
+        foreach (Token token in tokens)
+        {
+            Console.WriteLine(token);
+        }
+    }
+
+    public static void error(int line, string message)
+    {
+        report(line, "", message);
+    }
+
+    private static void report(int line, string where, string message)
+    {
+        Console.WriteLine("[line " + line + "] Error" + where + ": " + message);
+        hadError = true;
     }
 }

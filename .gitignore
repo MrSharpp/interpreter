@@ -1,1 +1,5 @@
-obj
+obj/*
+
+bin
+obj/Debug/net7.0/apphost.exe
+obj/Debug/net7.0/apphost.exe

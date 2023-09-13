@@ -1,0 +1,14 @@
+C:\Users\alam\Desktop\interpreter\bin\Debug\net7.0\interpreter.exe
+C:\Users\alam\Desktop\interpreter\bin\Debug\net7.0\interpreter.deps.json
+C:\Users\alam\Desktop\interpreter\bin\Debug\net7.0\interpreter.runtimeconfig.json
+C:\Users\alam\Desktop\interpreter\bin\Debug\net7.0\interpreter.dll
+C:\Users\alam\Desktop\interpreter\bin\Debug\net7.0\interpreter.pdb
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.AssemblyInfoInputs.cache
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.AssemblyInfo.cs
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.csproj.CoreCompileInputs.cache
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.dll
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\refint\interpreter.dll
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.pdb
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\interpreter.genruntimeconfig.cache
+C:\Users\alam\Desktop\interpreter\obj\Debug\net7.0\ref\interpreter.dll

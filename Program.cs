@@ -20,6 +20,7 @@ public class Bingo
     {
         byte[] content = File.ReadAllBytes(path);
         string source = System.Text.Encoding.UTF8.GetString(content);
+        Console.Write(source);
         run(source);
     }
 

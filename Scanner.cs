@@ -73,9 +73,52 @@ namespace Interpreter
                 case '>':
                     addToken(match('=') ? TokenType.GREATER_EQUAL : TokenType.GREATER);
                     break;
+                case '/':
+                    if (match('/'))
+                    {
+                        while (peek() != '\n' && !isAtEnd()) advance();
+                    }
+                    else
+                    {
+                        addToken(TokenType.SLASH);
+                    }
+                    break;
+                case ' ':
+                case '\r':
+                case '\t':
+                    break;
+                case '\n':
+                    line++;
+                    break;
+                case '"': addString(); break;
                 default: throw new Exception("Undefined character " + c);
 
             }
+        }
+
+        private void addString()
+        {
+            while (peek() != '"' && !isAtEnd())
+            {
+                if (peek() == '\n') line++;
+                advance();
+            }
+
+            if (isAtEnd())
+            {
+                new Exception("unterminated string");
+            }
+
+            advance();
+
+            string value = source.Substring(start + 1, current - 1);
+            addToken(TokenType.STRING, value);
+        }
+
+        private char peek()
+        {
+            if (isAtEnd()) return '\0';
+            return source.ElementAt(current);
         }
 
         private bool match(char expected)

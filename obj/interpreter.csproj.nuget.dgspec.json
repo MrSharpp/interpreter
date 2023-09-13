@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj": {}
+    "C:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj": {}
   },
   "projects": {
-    "c:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj": {
+    "C:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj",
+        "projectUniqueName": "C:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj",
         "projectName": "interpreter",
-        "projectPath": "c:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj",
+        "projectPath": "C:\\Users\\alam\\Desktop\\interpreter\\interpreter.csproj",
         "packagesPath": "C:\\Users\\alam\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\alam\\Desktop\\interpreter\\obj\\",
+        "outputPath": "C:\\Users\\alam\\Desktop\\interpreter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alam\\AppData\\Roaming\\NuGet\\NuGet.Config"
